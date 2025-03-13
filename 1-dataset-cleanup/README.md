@@ -4,16 +4,13 @@
 
 Area | Source | Name | Type | Description
 --- | --- | --- | --- | ---
-Democracy | Center for Systemic Peace | Polity5 | Tabular | Annual global assessment of political rights and civil liberties
-Democracy | Freedom House | Freedom in the World | Tabular | Annual global assessment of political rights and civil liberties
-Democracy | V-Dem Institute | Democracy Index | Tabular | Comprehensive data measuring different aspects of democracy worldwide
-Democracy | World Bank | Governance Indicators | Tabular | Metrics on governance quality, rule of law, and political stability
+Democracy | Center for Systemic Peace | Polity5 | Time Series | Quantitative measures of political regime characteristics and transitions, assessing democracy and autocracy levels globally from 1776 onwards
+Democracy | Freedom House | Freedom in the World | Time Series | Annual global assessment of political rights and civil liberties
+Democracy | Pennsylvania State University | Autocratic Regime Data | Tabular | Autocratic regimes: start/end dates, regime types, level of violence during regime failure event, categorization of regime failure events
+Democracy | Harvard Dataverse | Lexical Index of Electoral Democracy (LIED) | Tabular | Metrics on governance quality, rule of law, and political stability
+Democracy | Harvard Dataverse | Boix-Miller-Rosato Dichotomous Coding of Democracy | Tabular | Dichotomous coding of democracy
 Women Rights | World Bank | Gender Statistics | Tabular | Key indicators on gender including education, employment, health, and political participation
-Women Rights | UN Women | Violence Against Women | Tabular | Statistics on domestic violence, sexual harassment, and gender-based crimes
-Women Rights | OECD | Gender Wage Gap | Tabular | Data on pay differences between men and women across countries
 Religion | Pew Research | Religious Demographics | Tabular | Global religious composition and trends
-Religion | World Religion Database | Religious Freedom Index | Tabular | Data on religious restrictions and persecution
-Religion | UN | Religious Sites Protection | Tabular | Information on preservation of religious and cultural sites
 
 ## Cleanup Process
 
@@ -50,4 +47,75 @@ See Jupyter Notebook for processing files.
 
 Countries: 166
 Years: 1776 - 2018
+
+#### Freedom in the World
+
+[Freedom House](https://freedomhouse.org/reports/freedom-world)
+
+##### Indicators
+
+Indicator ID | Indicator Name | Value Range
+--- | --- | ---
+status | Status | F=Free, PF=Partly Free, NF=Not Free
+pr_rating | Political Rights Rating | 1-7
+cl_rating | Civil Liberties Rating | 1-7
+a1 | Head of government elected through free and fair elections | 1-10
+a2 | Legislative representatives elected through free and fair elections | 1-10
+a3 | Are the electoral laws and framework fair and equitable | 1-10
+a | Electoral Process (Aggregated) | 1-30
+b1 | Right to organize in different political parties or other competitive political groupings of their choice | 1-10
+b2 | Opportunity for the opposition to increase its support | 1-10
+b3 | Political choices free from domination by forces that are external to the political sphere | 1-10
+b4 | Various segments of the population have full political rights | 1-10
+b | Political Pluralism and Participation (Aggregated) | 1-40
+c1 | Elected head of government and national legislative representatives determine the policies of the government | 1-10
+c2 | Safeguards against official corruption | 1-10
+c3 | Government operates with openness and transparency | 1-10
+c | Functioning of Government (Aggregated) | 1-30
+d1 | Free and independent media | 1-10
+d2 | Individuals free to practice and express their religious faith or nonbelief | 1-10
+d3 | academic freedom | 1-10
+d4 | individuals free to express their personal views  | 1-40
+d | Freedom of Expression & Belief | 1-30
+e1 | freedom of assembly | 1-10
+e2  | freedom for nongovernmental organizations | 1-10
+e3 | freedom for trade unions and similar professional or labor organizations | 1-10
+e | Associational & Organizational Rights (Aggregated) | 1-30
+f1 | independent judiciary | 1-10
+f2 | due process prevail in civil and criminal matters | 1-10
+f3 | protection from the illegitimate use of physical force | 1-10
+f4 | laws, policies, and practices guarantee equal treatment | 1-10
+f | Rule of Law (Aggregated) | 1-40
+g1 | freedom of movement | 1-10
+g2 | right to own property and establish private businesses | 1-10
+g3 | social freedoms, including choice of marriage partner and size of family | 1-10
+g4 | equality of opportunity and freedom from economic exploitation | 1-10
+g | Personal Autonomy & Individual Rights (Aggregated) | 1-40
+total | Total Score | 1-100
+
+##### Processing Files
+
+See Jupyter Notebook for processing files.
+
+##### Data Range
+
+Countries: 195
+Years: 2013 - 2025
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
