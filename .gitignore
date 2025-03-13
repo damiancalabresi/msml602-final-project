@@ -1,0 +1,11 @@
+# Python virtual environment
+.venv/
+
+# macOS system files
+.DS_Store
+
+# Raw datasets
+datasets/raw/
+
+# Jupyter Notebook
+.ipynb_checkpoints/ 
