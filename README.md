@@ -15,7 +15,15 @@ Deadline | Stage | Status
 05/08 | Draft paper | Pending
 05/15 | Redact paper and review | Pending
 
-## Dataset Extraction and Research
+## 1 - Dataset Extraction and Research
+
+## Goal
+
+Transform all the raw datasets from complex Excel or Data files to CSV files. Normalize the column names and remove unnecessary columns.
+
+Shift time series data to have years as rows.
+
+Document and describe the meaning of each column/predictor.
 
 See [1-dataset-cleanup/README.md](1-dataset-cleanup/README.md) for details.
 
