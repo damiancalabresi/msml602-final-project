@@ -102,12 +102,102 @@ See Jupyter Notebook for processing files.
 Countries: 195
 Years: 2013 - 2025
 
+#### Autocratic Regime Data
 
+This source contains two datasets:
+- GWF: Geddes et al. (2012) 
+- CGV: Cheibub et al. (2010)
 
+The primary data set (“GWF Autocratic Regimes.xls”, “GWFcases.dta”, “GWFtscs.dta”, and “GWFtscs.txt”) is time series-cross section data that contains the Start and End dates of the autocratic regimes as well as the regime type and variables that code different dimensions of how autocratic regimes fail.
 
+The file "GWF All Political Regimes Case List.xls" contains a summary of the autocracy cases as well as the disagreements between the GWF and CGV.
 
+The file "GWF Autocratic Regimes.xlsx" contains the GWF dataset and will be used for the analysis.
 
+##### Indicators
 
+**Case List**
+
+The **Autocratic Regime Case List** sheet contains the following columns:
+
+- **gwf_country**: Country name
+- **gwf_casename**: The name of the autocratic regime (Usually the country name and years)
+- **gwf_startdate**: Start date on day/month/year format
+- **gwf_enddate**: End date on day/month/year format
+- **gwf_startyr**: Start year
+- **gwf_endyr**: End year
+- **gwf_subsreg**: Type of subsequent regime
+- **gwf_howend**: How the regime ended
+- **gwf_violent**: Whether the regime change was violent
+- **gwf_regimetype**: Type of regime
+
+**TSCS Data**
+
+The **TSCS Data** sheet contains the following columns:
+
+- **cow**: Correlates of War (CoW) country code
+- **year**: Calendar year
+- **gwf_country**: Country name
+- **gwf_casename**: Autocratic regime case name (country name and years)
+- **gwf_startdate**: Day-Month-Year for the calendar date of the autocratic regime start event
+- **gwf_enddate**: Day-Month-Year for the calendar date of the autocratic regime failure event
+- **gwf_spell**: Time-invariant duration of autocratic regime
+- **gwf_duration**: Time-varying duration of autocratic regime up to time t
+- **gwf_failure**: Binary indicator of autocratic regime failure
+- **gwf_fail_subs**: Categorical variable marking the subsequent regime type
+- **gwf_fail_type**: Categorical variable marking how the autocratic regime ends
+- **gwf_fail_violent**: Categorical variable marking the level of violence during the autocratic regime failure event
+- **gwf_regimetype**: Autocratic regime type
+- **gwf_party**: Binary indicator of party regime type (groups party-based, party-personal, party-military, party-personal-military, oligarchy, and Iran 1979-2010)
+- **gwf_personal**: Binary indicator of personalist regime type
+- **gwf_military**: Binary indicator of military regime type (groups military, military-personal, indirect military)
+- **gwf_monarchy**: Binary indicator of monarchy regime type
+
+The **Autocratic Regime Case List** sheet contains one row per autocratic regime, the **TSCS Data** sheet contains one row per year.
+
+###### Type of Subsequent Regime
+
+- 0: The regime has not ended by 2010.
+- 1: The regime that follows the last year of the regime being coded is democratic.
+- 2: The regime in the year following the last year of the regime being coded is autocratic, that is, included in our autocratic data set.
+- 3: The regime is followed by a period that is neither autocratic nor democratic (Periods when the country has no government or has multiple governments or when foreign troops occupy the country)
+
+###### How the Regime Ended
+
+- 0: The regime had not ended by 2010.
+- 1: Regime insiders changed the rules for choosing leaders and policies, or the executive was removed by elite actors other than the military.
+- 2: The incumbent, or a party, coalition, or candidate supported by the incumbent, lost an election and allowed the candidate or party that won to take oﬃce.
+- 3: A regime held a competitive election in which no major candidate or party supported by the incumbent ran, as a means of choosing the next government, and allowed the winner of the election to take oﬃce.
+- 4: The regime was ousted by popular uprising.
+- 5: The regime was overthrown by military coup (defined as ouster by the military of the regime in power).
+- 6: Regime is ousted by insurgents, revolutionaries, or combatants fighting a civil war.
+- 7: Regime changed through foreign imposition or invasion
+- 8: A new leader chosen in a regular autocratic succession changed the formal and informal rules defining the regime after his accession to power while himself remaining in power.
+- 9: Regime ends because the state’s existence ends or the government’s control of most of its territory ends
+
+###### Violence
+
+- 0: The regime had not ended by 2010.
+- 1: Non-violent, defined as involving no deaths.
+- 2: A few deaths occurred during the transition. If numbers are available, ‘a few’ means 1-25.
+- 3: Many deaths occurred during the transition. If numbers are available, ‘many’ means more than 25 but less than 1000.
+- 4: More than 1000 deaths occurred.
+
+###### Regime Type
+
+- Party-based regimes: party, party-based, party-military, party-personal, party-personal-military, oligarchy
+- Military regimes: indirect military, military, military-personal
+- Personalist regimes: personal
+- Monarchical regimes: monarchy
+
+##### Processing Files
+
+See Jupyter Notebook for processing files.
+
+##### Data Range
+
+Countries: 120
+Years: 1946 - 2010
 
 
 
