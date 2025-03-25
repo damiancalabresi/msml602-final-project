@@ -20,11 +20,11 @@ Women Rights | World Bank Group | Women, Business and the Law Historical Data | 
 
 See the [democracy.md](democracy.md) file for more details.
 
-### Women Rights
-
-See the [women_rights.md](women_rights.md) file for more details.
-
 ### Religion
 
 See the [religion.md](religion.md) file for more details.
+
+### Women Rights
+
+See the [women_rights.md](women_rights.md) file for more details.
 

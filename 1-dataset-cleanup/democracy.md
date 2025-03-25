@@ -106,42 +106,42 @@ The file "GWF Autocratic Regimes.xlsx" contains the GWF dataset and will be used
 
 ### Indicators
 
-**Case List**
+**Autocratic Regime Case List**
 
-The **Autocratic Regime Case List** sheet contains the following columns:
-
-- **gwf_country**: Country name
-- **gwf_casename**: The name of the autocratic regime (Usually the country name and years)
-- **gwf_startdate**: Start date on day/month/year format
-- **gwf_enddate**: End date on day/month/year format
-- **gwf_startyr**: Start year
-- **gwf_endyr**: End year
-- **gwf_subsreg**: Type of subsequent regime
-- **gwf_howend**: How the regime ended
-- **gwf_violent**: Whether the regime change was violent
-- **gwf_regimetype**: Type of regime
+Indicator ID | Indicator Name | Value Range
+--- | --- | ---
+gwf_country | Country name
+gwf_casename | The name of the autocratic regime (Usually the country name and years)
+gwf_startdate | Start date on day/month/year format
+gwf_enddate | End date on day/month/year format
+gwf_startyr | Start year
+gwf_endyr | End year
+gwf_subsreg | Type of subsequent regime | 0 to 3 (See Codebook)
+gwf_howend | How the regime ended | 0 to 9 (See Codebook)
+gwf_violent | Whether the regime change was violent | 0 to 4 (See Codebook)
+gwf_regimetype | Type of regime | Party-based, Military, Personalist, Monarchical (See Codebook)
 
 **TSCS Data**
 
-The **TSCS Data** sheet contains the following columns:
-
-- **cow**: Correlates of War (CoW) country code
-- **year**: Calendar year
-- **gwf_country**: Country name
-- **gwf_casename**: Autocratic regime case name (country name and years)
-- **gwf_startdate**: Day-Month-Year for the calendar date of the autocratic regime start event
-- **gwf_enddate**: Day-Month-Year for the calendar date of the autocratic regime failure event
-- **gwf_spell**: Time-invariant duration of autocratic regime
-- **gwf_duration**: Time-varying duration of autocratic regime up to time t
-- **gwf_failure**: Binary indicator of autocratic regime failure
-- **gwf_fail_subs**: Categorical variable marking the subsequent regime type
-- **gwf_fail_type**: Categorical variable marking how the autocratic regime ends
-- **gwf_fail_violent**: Categorical variable marking the level of violence during the autocratic regime failure event
-- **gwf_regimetype**: Autocratic regime type
-- **gwf_party**: Binary indicator of party regime type (groups party-based, party-personal, party-military, party-personal-military, oligarchy, and Iran 1979-2010)
-- **gwf_personal**: Binary indicator of personalist regime type
-- **gwf_military**: Binary indicator of military regime type (groups military, military-personal, indirect military)
-- **gwf_monarchy**: Binary indicator of monarchy regime type
+Indicator ID | Indicator Name | Value Range
+--- | --- | ---
+cow | Correlates of War (CoW) country code | 
+year | Calendar year | 
+gwf_country | Country name | 
+gwf_casename | Autocratic regime case name (country name and years) | 
+gwf_startdate | Day-Month-Year for the calendar date of the autocratic regime start event | 
+gwf_enddate | Day-Month-Year for the calendar date of the autocratic regime failure event | 
+gwf_spell | Total number of years of the autocratic regime | 
+gwf_duration | Duration of the autocratic regime until the current year | 
+gwf_failure | Binary indicator of autocratic regime failure | 0-1
+gwf_fail_subs | Categorical variable marking the subsequent regime type | 0 to 3
+gwf_fail_type | Categorical variable marking how the autocratic regime ends | 0 to 9
+gwf_fail_violent | Categorical variable marking the level of violence during the autocratic regime failure event | 0 to 4
+gwf_regimetype | Autocratic regime type | Party-based, Military, Personalist, Monarchical (See Codebook)
+gwf_party | Binary indicator of party regime type | 0-1
+gwf_personal | Binary indicator of personalist regime type | 0-1
+gwf_military | Binary indicator of military regime type | 0-1
+gwf_monarchy | Binary indicator of monarchy regime type | 0-1
 
 The **Autocratic Regime Case List** sheet contains one row per autocratic regime, the **TSCS Data** sheet contains one row per year.
 
@@ -230,28 +230,30 @@ The dataset consists of 14 original indicators and original two indices. The ind
 
 ### Indicators
 
-- **countryn**: Name of the polity.
-- **cow**: Correlates of War country ID.
-- **vdem**: Varieties of Democracy country ID.
-- **year**: Year.
-- **male_suffrage**: All male citizens are allowed to vote in national elections (1=present, 0=absent).
-- **female_suffrage**: All female citizens are allowed to vote in national elections (1=present, 0=absent).
-- **executive_elections**: Chief executive is either directly or indirectly elected (1=present, 0=absent).
-- **legislative_elections**: Legislative body, issues at least some laws and does not perform executive functions. The lower house (or unicameral chamber) of the legislature is at least partly elected. The legislature has not been closed (1=present, 0=absent).
-- **multi_party_legislative_elections**: The lower house of the legislature is elected by voters facing more than one choice (1=present, 0=absent).
-- **competitive_elections**: Elections are, in principle, sufficiently free to enable the opposition to gain power if they were to attract sufficient support from the electorate (1=present, 0=absent).
-- **lexical_index**: Original index of democracy (Score 0 to 6).
-- **political_liberties**: Freedom of expression, freedom of assembly, and freedom of association are respected. (1=present, 0=absent).
-- **lexical_index_plus**: The meaning of the scores from 0 to 5 are identical to LIED, whereas 6 and 7 refer to the other indicator values.
-- **democratic_transition**: Democratic transition took place in a given year as signified by a change in the competitive_elections indicator (1=present, 0=absent).
-- **transition_type**: For years with democratic transitions, mode of transition
-- **democratic_breakdown**: A democratic breakdown took place in a given year as signified by a change in competitive_elections indicator from 1 in the previous year to 0 in the current year (1=present, 0=absent).
-- **breakdown_type**: For years with democratic transitions, mode of transition
-- **turnover_period**: Indicates whether a particular country-year is part of a period between an initial electoral government alternation (as indicated by a turnover event, see below) in a multi-party electoral regime and an interruption of the same multi-party electoral regime (as indicated by a score
-of 0 on executive elections or multi-party_legislative_elections, see above). If another turnover event happens later in the same polity, a new turnover period begins (1=present, 0=absent).
-- **turnover_event**: Partisan control over government power alternated from an elected chief executive to another party/coalition/candidate representing the opposition as a consequence of a multi-party election (1=present,0=absent).
-- **two_turnover_period**: Year is part of a period between a second electoral government alternation. If two turnover events happens later in the same polity under a new multi_party electoral regime, a new two-turnover period begins (1=present, 0=absent).
-- **sovereign**: Indicates whether a polity/country is a separate unit in the international system of states (1) or subjected to foreign colonization or occupation with formal loss of autonomy (0).
+Indicator ID | Indicator Name | Value Range
+--- | --- | ---
+countryn | Name of the country |
+cow | Correlates of War country ID
+vdem | VDEM dataset country ID
+year | Year | 1789 to 2023
+male_suffrage | Male citizens are allowed to vote | 1=present, 0=absent
+female_suffrage | Female citizens are allowed to vote | 1=present, 0=absent
+executive_elections | Chief executive is either directly or indirectly elected | 1=present, 0=absent
+legislative_elections | Legislative body, issues at least some laws and does not perform executive functions. The lower house (or unicameral chamber) of the legislature is at least partly elected. The legislature has not been closed | 1=present, 0=absent
+multi_party_legislative_elections | The lower house of the legislature is elected by voters facing more than one choice | 1=present, 0=absent
+competitive_elections | Elections are, in principle, sufficiently free to enable the opposition to gain power if they were to attract sufficient support from the electorate | 1=present, 0=absent
+lexical_index | Original index of democracy | Score 0 to 6
+political_liberties | Freedom of expression, freedom of assembly, and freedom of association are respected | 1=present, 0=absent
+lexical_index_plus | The meaning of the scores from 0 to 5 are identical to LIED, whereas 6 and 7 refer to the other indicator values | Score 0 to 7
+democratic_transition | Democratic transition took place in a given year as signified by a change in the competitive_elections indicator | 1=present, 0=absent
+transition_type | For years with democratic transitions, mode of transition | See later
+democratic_breakdown | A democratic breakdown took place in a given year as signified by a change in competitive_elections indicator from 1 in the previous year to 0 in the current year | 1=present, 0=absent
+breakdown_type | For years with democratic transitions, mode of transition | See later
+turnover_period | Indicates whether a particular country-year is part of a period between an initial electoral government alternation (as indicated by a turnover event, see below) in a multi-party electoral regime and an interruption of the same multi-party electoral regime (as indicated by a score
+of 0 on executive elections or multi-party_legislative_elections, see above). If another turnover event happens later in the same polity, a new turnover period begins | 1=present, 0=absent
+turnover_event | Partisan control over government power alternated from an elected chief executive to another party/coalition/candidate representing the opposition as a consequence of a multi-party election | 1=present, 0=absent
+two_turnover_period | Year is part of a period between a second electoral government alternation. If two turnover events happens later in the same polity under a new multi_party electoral regime, a new two-turnover period begins | 1=present, 0=absent
+sovereign | Country is a separate unit in the international system of states (1) or subjected to foreign colonization or occupation | 1 - 0
 
 ### Lexical Index
 
