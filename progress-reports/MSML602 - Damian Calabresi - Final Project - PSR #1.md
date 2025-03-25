@@ -2,19 +2,22 @@
 
 # Table of Contents
 
-1. Github Repository
-2. Dataset Extraction
-   1. Democracy Datasets
-      - Polity5
-      - Freedom in the World
-      - Autocratic Regime Data
-      - Boix-Miller-Rosato Dichotomous Coding of Democracy
-      - Lexical Index of Electoral Democracy (LIED)
-   2. Religiosity Datasets
-      - Pew Research Center - Global Religious Diversity
-      - World Religion Project - National Religion Dataset
-3. Next Steps
-4. Status
+1. [Github Repository](#github-repository)
+2. [Dataset Extraction](#dataset-extraction)
+   1. [Democracy Datasets](#democracy-datasets)
+      - [Polity5](#polity5)
+      - [Freedom in the World](#freedom-in-the-world)
+      - [Autocratic Regime Data](#autocratic-regime-data)
+      - [Boix-Miller-Rosato Dichotomous Coding of Democracy](#boix-miller-rosato-dichotomous-coding-of-democracy)
+      - [Lexical Index of Electoral Democracy (LIED)](#lexical-index-of-electoral-democracy-lied)
+   2. [Religiosity Datasets](#religiosity-datasets)
+      - [Pew Research Center - Global Religious Diversity](#pew-research-center---global-religious-diversity)
+      - [World Religion Project - National Religion Dataset](#association-of-religion-data-archives---national-religion-dataset)
+   3. [Women Rights Datasets](#women-rights-datasets)
+      - [Georgetown Institute for Women, Peace and Security - Women Peace and Security Index](#georgetown-institute-for-women-peace-and-security---women-peace-and-security-index)
+      - [World Bank Group - Women, Business and the Law Historical Data](#world-bank-group---women-business-and-the-law-historical-data)
+3. [Next Steps](#next-steps)
+4. [Status](#status)
 
 # Github Repository
 
@@ -365,14 +368,14 @@ employment | The number of employed women and girls, ages 25 - 64, expressed as 
 financial_inclusion | Women ages 15 and older who report having an account at a bank | 0 - 100
 cell_phone_use | Percentage of women and girls ages 15 and older who report having a mobile phone | 0 - 100
 parliamentary_representation | Percentage of seats held by women in lower and upper houses of the national parliament | 0 - 100
-absence_of_legal_discrimination | The extent (0–100) to which laws and regulations differentiate between women and men, or protect women’s opportunities | 0 - 100
+absence_of_legal_discrimination | The extent (0–100) to which laws and regulations differentiate between women and men, or protect women's opportunities | 0 - 100
 access_to_justice | The extentto which women are able to exercise justice by bringing cases before the court without risk to their personal safety | 0 - 4
 maternal_mortality_ratio | Number of deaths due to pregnancy-related causes per 100,000 live births | 0 - 1000
 son_bias | Number of boys born per 100 girls | 100 - 114
 intimate_partner_violence | Percentage of ever-partnered women who experienced physical or sexual violence committed by their intimate partner in the 12 months preceding the survey | 0 - 100
 community_safety | Percentage of women who report feeling safe walking alone at night in their community | 0 - 100
 political_violence_targeting_women | Percentage of women who report being victims of political violence | 0 - 100
-proximity_to_conflict | Number of civilian targeting events in which women and/or girls are the ‘target’ of the violence. It is expressed as the number of events per 100,000 women | 0 - 1.2
+proximity_to_conflict | Number of civilian targeting events in which women and/or girls are the 'target' of the violence. It is expressed as the number of events per 100,000 women | 0 - 1.2
 
 ### World Bank Group - Women, Business and the Law Historical Data
 
