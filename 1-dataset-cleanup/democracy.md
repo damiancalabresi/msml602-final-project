@@ -8,20 +8,24 @@
 
 Indicator ID | Indicator Name | Value Range
 --- | --- | ---
-democ | Institutionalized Democracy Index | 0-10
-autoc | Institutionalized Autocracy Index | 0-10
-polity | Combined Polity Score | +10 (strongly democratic) to -10 (strongly autocratic)
-polity2 | Revised Combined Polity Score (p5) | Softens the Polity score for time-series analysis
-durable | Regime Durability Index | Number of years since the most recent regime change
-xrreg | Regulation of Chief Executive Recruitment | 1- Unregulated; 2 - Designational/Transitional; 3 - Regulated; -66 - Interruption; -77 - Interregnum; -88 - Transition period
-xrcomp | Competitiveness of Executive Recruitment | 1 - Selection; 2 - Dual/Transitional; 3 - Election; -66 - Interruption; -77 - Interregnum; -88 - Transition period
-xropen | Openness of Executive Recruitment | 1 - Closed; 2 - Dual Executive-Designation; 3 - Dual Executive-Election; 4- Open; -66 - Interruption; -77 - Interregnum; -88 - Transition period
-xconst | Executive Constraints (Decision Rules) | 1 - Unlimited Authority; 2 - Intermediate Category; 3 - Slight to Moderate Limitation on Executive Authority; 4 - Intermediate Category; 5 - Substantial Limitations on Executive Authority; 6 - Intermediate Category; 7 - Executive Parity or Subordination; -66 - Interruption; -77 - Interregnum; -88 - Transition period
-parreg | Regulation of Participation | 1- Unregulated; 2 - Multiple Identity; 3 - Sectarian; 4 - Restricted; 5 - Regulated; -66 - Interruption; -77 - Interregnum; -88 - Transition period
-parcomp | The Competitiveness of Participation | 0 - Not Applicable; 1 - Repressed; 2 - Suppressed; 3 - Factional; 4 - Transitional; 5 - Competitive; -66 - Interruption; -77 - Interregnum; -88 - Transition period
-exrec | Executive Recruitment Concept | 1 - Unconstrained; 2 - Dual/Transitional; 3 - Constrained; -66 - Interruption; -77 - Interregnum; -88 - Transition period
+autoc | Composite Autocracy Index | 0-10 (-77 -88 -66 for special cases)
+democ | Composite Democracy Index | 0-10 (-77 -88 -66 for special cases)
 exconst | Executive Constraints Concept | Same as xconst
-polcomp | Political Competition Concept | Combination of parreg and parcomp
+exrec | Executive Recruitment Concept | 0-10 (-77 -88 -66 for special cases)
+parcomp | The Competitiveness of Participation | 0 - Not Applicable; 1 - Repressed; 2 - Suppressed; 3 - Factional; 4 - Transitional; 5 - Competitive (-77 -88 -66 for special cases)
+parreg | Regulation of Participation | 1- Unregulated; 2 - Multiple Identity; 3 - Sectarian; 4 - Restricted; 5 - Regulated (-77 -88 -66 for special cases)
+polcomp | Political Competition Concept | Combination of parreg and parcomp (1-10)
+polity | Combined Polity Score | +10 (strongly democratic) to -10 (strongly autocratic)
+xconst | Executive Constraints (Decision Rules) | 1 - Unlimited Authority; 2 - Intermediate Category; 3 - Slight to Moderate Limitation on Executive Authority; 4 - Intermediate Category; 5 - Substantial Limitations on Executive Authority; 6 - Intermediate Category; 7 - Executive Parity or Subordination (-77 -88 -66 for special cases)
+xrcomp | Competitiveness of Executive Recruitment | 0 - xrreg is Unregulated; 1 - Selection; 2 - Dual/Transitional; 3 - Election (-77 -88 -66 for special cases)
+xropen | Openness of Executive Recruitment | 0 - xrreg is Unregulated; 1 - Closed; 2 - Dual Executive-Designation; 3 - Dual Executive-Election; 4- Open (-77 -88 -66 for special cases)
+xrreg | Regulation of Chief Executive Recruitment | 1 - Unregulated; 2 - Designational/Transitional; 3 - Regulated (-77 -88 -66 for special cases)
+
+**Special Cases**
+
+- -77: Interregnum
+- -88: Transition period
+- -66: Interruption
 
 ### Processing Files
 
@@ -30,7 +34,8 @@ See Jupyter Notebook for processing files.
 ### Data Range
 
 Countries: 166
-Years: 1776 - 2018
+
+Years: 1941 - 2018
 
 ## Freedom in the World
 
@@ -43,39 +48,39 @@ Indicator ID | Indicator Name | Value Range
 status | Status | F=Free, PF=Partly Free, NF=Not Free
 pr_rating | Political Rights Rating | 1-7
 cl_rating | Civil Liberties Rating | 1-7
-a1 | Head of government elected through free and fair elections | 1-10
-a2 | Legislative representatives elected through free and fair elections | 1-10
-a3 | Are the electoral laws and framework fair and equitable | 1-10
-a | Electoral Process (Aggregated) | 1-30
-b1 | Right to organize in different political parties or other competitive political groupings of their choice | 1-10
-b2 | Opportunity for the opposition to increase its support | 1-10
-b3 | Political choices free from domination by forces that are external to the political sphere | 1-10
-b4 | Various segments of the population have full political rights | 1-10
-b | Political Pluralism and Participation (Aggregated) | 1-40
-c1 | Elected head of government and national legislative representatives determine the policies of the government | 1-10
-c2 | Safeguards against official corruption | 1-10
-c3 | Government operates with openness and transparency | 1-10
-c | Functioning of Government (Aggregated) | 1-30
-d1 | Free and independent media | 1-10
-d2 | Individuals free to practice and express their religious faith or nonbelief | 1-10
-d3 | academic freedom | 1-10
-d4 | individuals free to express their personal views  | 1-40
-d | Freedom of Expression & Belief | 1-30
-e1 | freedom of assembly | 1-10
-e2  | freedom for nongovernmental organizations | 1-10
-e3 | freedom for trade unions and similar professional or labor organizations | 1-10
-e | Associational & Organizational Rights (Aggregated) | 1-30
-f1 | independent judiciary | 1-10
-f2 | due process prevail in civil and criminal matters | 1-10
-f3 | protection from the illegitimate use of physical force | 1-10
-f4 | laws, policies, and practices guarantee equal treatment | 1-10
-f | Rule of Law (Aggregated) | 1-40
-g1 | freedom of movement | 1-10
-g2 | right to own property and establish private businesses | 1-10
-g3 | social freedoms, including choice of marriage partner and size of family | 1-10
-g4 | equality of opportunity and freedom from economic exploitation | 1-10
-g | Personal Autonomy & Individual Rights (Aggregated) | 1-40
-total | Total Score | 1-100
+a1 | Head of government elected through free and fair elections | 0-4
+a2 | Legislative representatives elected through free and fair elections | 0-4
+a3 | Are the electoral laws and framework fair and equitable | 0-4
+a | Electoral Process (Aggregated) | 0-12
+b1 | Right to organize in different political parties or other competitive political groupings of their choice | 0-4
+b2 | Opportunity for the opposition to increase its support | 0-4
+b3 | Political choices free from domination by forces that are external to the political sphere | 0-4
+b4 | Various segments of the population have full political rights | 0-4
+b | Political Pluralism and Participation (Aggregated) | 0-16
+c1 | Elected head of government and national legislative representatives determine the policies of the government | 0-4
+c2 | Safeguards against official corruption | 0-4
+c3 | Government operates with openness and transparency | 0-4
+c | Functioning of Government (Aggregated) | 0-12
+d1 | Free and independent media | 0-4
+d2 | Individuals free to practice and express their religious faith or nonbelief | 0-4
+d3 | academic freedom | 0-4
+d4 | individuals free to express their personal views  | 0-4
+d | Freedom of Expression & Belief | 0-16
+e1 | freedom of assembly | 0-4
+e2  | freedom for nongovernmental organizations | 0-4
+e3 | freedom for trade unions and similar professional or labor organizations | 0-4
+e | Associational & Organizational Rights (Aggregated) | 0-11
+f1 | independent judiciary | 0-4
+f2 | due process prevail in civil and criminal matters | 0-4
+f3 | protection from the illegitimate use of physical force | 0-4
+f4 | laws, policies, and practices guarantee equal treatment | 0-4
+f | Rule of Law (Aggregated) | 0-16
+g1 | freedom of movement | 0-4
+g2 | right to own property and establish private businesses | 0-4
+g3 | social freedoms, including choice of marriage partner and size of family | 0-4
+g4 | equality of opportunity and freedom from economic exploitation | 0-4
+g | Personal Autonomy & Individual Rights (Aggregated) | 0-16
+total | Total Score | 0-100
 
 ### Processing Files
 
@@ -84,6 +89,7 @@ See Jupyter Notebook for processing files.
 ### Data Range
 
 Countries: 195
+
 Years: 2013 - 2025
 
 ## Autocratic Regime Data
@@ -191,17 +197,19 @@ This data set provides a dichotomous coding of democracy for every country in th
 
 ### Indicators
 
-- country: Country name
-- ccode: COW country code
-- abbreviation: World Bank 3-letter code
-- abbreviation_ucdp: UCDP 3-letter code
-- year: Year [1800-2020]
-- democracy: Dichotomous democracy measure (1 = Democratic, 0 = Non-Democratic)
-- democracy_trans: -1 = Democratic breakdown, 0 = No change, 1 = Transition (current year)
-- democracy_breakdowns: Country's total number of democratic breakdowns (up through current year)
-- democracy_duration: Consecutive years of current regime type
-- democracy_omitteddata: This is the same measure as democracy, except it records an -1 for countries occupied during an international war or experiencing state collapse during a civil war. The democracy variable instead fills in these years as continuations of the same regime type.
-- democracy_femalesuffrage: This adjusts democracy by also requiring that at least half of adult women have the right to vote.
+Indicator ID | Indicator Name | Value Range
+--- | --- | ---
+country | Country name
+ccode | COW country code
+abbreviation | World Bank 3-letter code
+abbreviation_ucdp | UCDP 3-letter code
+year | Year | 1800 to 2020
+democracy | Dichotomous democracy measure | 1 = Democratic, 0 = Non-Democratic (For occupied countries the value is continued from previous years)
+democracy_trans | Democratic transition in the current year | -1 = Democratic breakdown, 0 = No change, 1 = Transition (current year)
+democracy_breakdowns | Country's total number of democratic breakdowns (up through current year) | > 0
+democracy_duration | Consecutive years of current regime type | > 0
+democracy_omitteddata | This is the same measure as democracy, except it records an -1 for countries occupied during an international war or experiencing state collapse during a civil war. The democracy variable instead fills in these years as continuations of the same regime type. | 0, 1, -1
+democracy_femalesuffrage | This adjusts democracy by also requiring that at least half of adult women have the right to vote. | 0, 1
 
 ### Processing Files
 

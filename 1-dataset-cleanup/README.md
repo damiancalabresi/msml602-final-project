@@ -9,8 +9,10 @@ Democracy | Freedom House | Freedom in the World | Time Series | Annual global a
 Democracy | Pennsylvania State University | Autocratic Regime Data | Tabular | Autocratic regimes: start/end dates, regime types, level of violence during regime failure event, categorization of regime failure events
 Democracy | Harvard Dataverse | Lexical Index of Electoral Democracy (LIED) | Tabular | Metrics on governance quality, rule of law, and political stability
 Democracy | Harvard Dataverse | Boix-Miller-Rosato Dichotomous Coding of Democracy | Tabular | Dichotomous coding of democracy
-Women Rights | World Bank | Gender Statistics | Tabular | Key indicators on gender including education, employment, health, and political participation
-Religion | Pew Research | Religious Demographics | Tabular | Global religious composition and trends
+Religion | Pew Research Center | Global Religious Diversity | Tabular | Religious Diversity Index (RDI) scores for countries based on the shares of eight major world religions
+Religion | Association of Religion Data Archives | National Religion Dataset | Time Series | Number and percentage of adherents of each religion in each country, based on multiple sources
+Women Rights | Georgetown Institute for Women, Peace and Security | Women Peace and Security Index | Tabular | WPS index and survey-based measurements of women inclusion, justice, and security
+Women Rights | World Bank Group | Women, Business and the Law Historical Data | Time Series | Composite WBL Index based on analysis of legal framework governing women's economic opportunities and rights and definition of scores for mobility, workplace, pay, marriage, parenthood, entrepreneurship, assets, and pension
 
 ## Cleanup Process
 
