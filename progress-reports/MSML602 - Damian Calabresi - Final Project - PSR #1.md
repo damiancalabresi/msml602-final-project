@@ -3,7 +3,7 @@
 # Table of Contents
 
 1. [Github Repository](#github-repository)
-2. [Dataset Extraction](#dataset-extraction)
+2. [Dataset Extraction and Cleanup](#dataset-extraction-and-cleanup)
    1. [Democracy Datasets](#democracy-datasets)
       - [Polity5](#polity5)
       - [Freedom in the World](#freedom-in-the-world)
@@ -27,7 +27,7 @@ The repository is public and most of the progress will also be documented in mar
 
 [Github - damiancalabresi - msml602-final-project](https://github.com/damiancalabresi/msml602-final-project/)
 
-# Dataset Extraction
+# Dataset Extraction and Cleanup
 
 The code and markdown documentation can be found here:
 
@@ -403,8 +403,11 @@ marriage | Marriage | 0 - 100
 parenthood | Parenthood | 0 - 100
 entrepreneurship | Entrepreneurship | 0 - 100
 
+# Scope Definition
 
-###  Next Steps
+
+
+#  Next Steps
 
 # Status
 
