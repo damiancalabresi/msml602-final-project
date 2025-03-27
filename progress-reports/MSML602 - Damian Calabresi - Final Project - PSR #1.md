@@ -27,7 +27,7 @@ The repository is public and most of the progress will also be documented in mar
 
 [Github - damiancalabresi - msml602-final-project](https://github.com/damiancalabresi/msml602-final-project/)
 
-# Dataset Extraction and Cleanup
+# Dataset Extraction, Cleanup and Research
 
 The code and markdown documentation can be found here:
 
@@ -403,18 +403,92 @@ marriage | Marriage | 0 - 100
 parenthood | Parenthood | 0 - 100
 entrepreneurship | Entrepreneurship | 0 - 100
 
-# Scope Definition
 
+# Research
 
+## Reference
+
+*Behr,Daniela Monika; Perrin,Caroline Sabine Marie; Hyland,Marie Caitriona; Trumbic,Tea.*
+*Empowering Change : Assessing the Role of Democracy, Civil Society, and Women’s Rights Groups in Advancing Legal Gender Equality (English). Policy Research working paper ; no. WPS 10788; PEOPLE; RRR Washington, D.C. : World Bank Group.*
+*http://documents.worldbank.org/curated/en/099741306032438849*
+*https://doi.org/10.60572/aqdz-9671*
+
+**Note:** This document is already in the references of the project proposal. It's based on the dataset *Women, Business and the Law* which is one of the datasets used in the project.
+
+### Summary
+
+This research describes analysis the women's legal rights across eight domains: Mobility, Workplace, Pay, Marriage, Parenthood, Entrepreneurship, Assets, and Pension.
+
+The paper presents a comprehensive analysis of the role and importance of active civil society organizations and women's right groups in advancing legal gender equality.
+
+The results reveal that higher levels of democracy and a more active civil society are positively associated with advances in legal equality between men and women. This means:
+
+Democracy + Civil Society -> Women Equality
+
+### Comparison with the project
+
+#### Hypothesis
+
+The cited research is based on the hypothesis that democracy, active civil society and women's rights groups are positively associated with women's legal rights. Our project is trying to do the opposite, analyze if the equality of women in the law and society are a good indicator of democracy.
+
+#### Datasets
+
+The cited research uses the dataset *Women, Business and the Law* to analyze the role of democracy, active civil society and women's rights. Our project uses different datasets in an effort to consider different aspects, measurements, and find if any specific measurement is a good indicator of democracy.
+
+#### Scope
+
+##### Law Analysis
+
+The investigation presented in this paper includes an incredible analysis of the laws and regulations created on each country over the years and how they affect 8 legal indicators of women's equality. They translated the legal framework of 190 countries into 8 measurements.
+
+This project won't include such analysis and will make use of those measurements created, enhancing them with other datasets.
+
+##### Religion
+
+I believe that religion and religiosity are a key factor in the relationship between democracy and women's rights. For this reason I've included three datasets related to religion in the analysis.
+
+I consider cultural values and traditions to play a key role in this relationship too but those are more difficult to measure, while religion is a more concrete concept.
+
+#### Technical Analysis
+
+The cited paper does a correlation analysis between the WBL Index and the measurements of democracy and civil participation. To do this is takes the Autocracy/Democracy Score from the Polity 5 dataset (Included in our project) and *v2x_cspart* from the VDEM dataset (Not included in our project).
+
+##### Results
+
+The research doesn't arrive to clear results, as can be seen in the following quotes:
+
+> More democratic states are associated with higher legal gender equality overall 
+> Across the eight indicators, no significant relationship could be detected between democracyand Mobility, Parenthood, and Pension.
+> On the other hand, the highest coefficient, 7.071 (p<0.01) between the level of democracy and Workplace
+> The estimated coefficients on the control variable GDP per Capita are in the direction expected, although not statistically significant 
+
+##### Criticism
+
+In my opinion, the research makes a great qualitative analysis but doesn't arrive to a significant correlation when analyzing the data. This may be become outliers are not considered (E.g.: Singapore). For this reason I decided to:
+
+- Add Religion datasets to the analysis
+- Cluster the countries based on the democracy and religious datasets, then analyze the correlation on each cluster
+
+There could be a correlation on specific groups of countries with shared values and traditions.
 
 #  Next Steps
+
+- Separate tabular from time series data
+- For tabular data, define the countries to be included in the analysis
+- For time series data, define the time period and countries to be included in the analysis
+- For Tabular data
+   - Find correlation between democracy datasets
+   - Find correlation between women rights datasets
+   - Run Linear Regression between Democracy datasets and Women Rights datasets
+   - Run Logistic Regression for the dichotomous democracy datasets
+   - Merge women rights datasets with the dichotomous democracy dataset and test SVM
 
 # Status
 
 * Week 1 (03/13): Dataset extraction and research - DONE  
-* Week 2 (03/20): Data cleanup and EDA - IN PROGRESS  
-* Week 3 (03/27): Identify scope. Comprehensive Analysis of Democracy Indexes - PENDING  
-* Week 4 (04/03): Cleanup and Merge Datasets - PENDING  
+* Week 2 (03/20): Data cleanup and EDA - DONE
+* Week 3 (03/27): Identify scope. Comprehensive Analysis of Democracy Indexes - IN PROGRESS  
+* Week 4 (04/03): Cleanup and Merge Datasets - IN PROGRESS  
 * Week 5 (04/10): Linear and Logistic Regression - PENDING  
 * Week 6 (04/17): SVM and Clustering - PENDING  
 * Week 7 (04/24): Identify Outliers - PENDING  
