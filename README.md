@@ -6,8 +6,8 @@ Deadline | Stage | Status
 --- | --- | ---
 03/13 | Dataset extraction and research | Done
 03/20 | Data cleanup and EDA | Done
-03/27 | Identify scope. Comprehensive Analysis of Democracy Indexes | Pending
-04/03 | Cleanup and Merge Datasets | Pending
+03/27 | Identify scope. Comprehensive Analysis of Democracy Indexes | Done
+04/03 | Cleanup and Merge Datasets | Done
 04/10 | Linear and Logistic Regression | Pending
 04/17 | SVM and Clustering | Pending
 04/24 | Identify Outliers | Pending
