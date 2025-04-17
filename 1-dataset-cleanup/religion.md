@@ -22,6 +22,10 @@ folk | Percentage of Folk or Traditional Religions | 0 - 1
 jewish | Percentage of Jews | 0 - 1
 other | Percentage of Other Religions | 0 - 1
 
+The Religious Diversity Index calculation is based on the Herfindahl-Hirschman Index, which is used in various fields to measure the degree of concentration of human or biological populations as well as organizations. The RDI is inverted so a higher score means a higher level of religious diversity.
+
+For more information about the RDI, see [here](https://www.pewresearch.org/religion/2014/04/04/methodology-2-5/).
+
 ## Association of Religion Data Archives - National Religion Dataset
 
 The World Religion Dataset is maintained by The Association of Religion Data Archives (The ARDA)

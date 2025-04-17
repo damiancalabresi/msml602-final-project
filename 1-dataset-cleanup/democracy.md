@@ -82,6 +82,8 @@ g4 | equality of opportunity and freedom from economic exploitation | 0-4
 g | Personal Autonomy & Individual Rights (Aggregated) | 0-16
 total | Total Score | 0-100
 
+Fields like *status*, *pr_rating*, and *cl_rating* are aggregated from the other indicators. The fields *a*, *b*, *c*, *d*, *e*, *f*, *g* are the aggregated score of the given category.
+
 ### Processing Files
 
 See Jupyter Notebook for processing files.
@@ -249,8 +251,7 @@ democratic_transition | Democratic transition took place in a given year as sign
 transition_type | For years with democratic transitions, mode of transition | See later
 democratic_breakdown | A democratic breakdown took place in a given year as signified by a change in competitive_elections indicator from 1 in the previous year to 0 in the current year | 1=present, 0=absent
 breakdown_type | For years with democratic transitions, mode of transition | See later
-turnover_period | Indicates whether a particular country-year is part of a period between an initial electoral government alternation (as indicated by a turnover event, see below) in a multi-party electoral regime and an interruption of the same multi-party electoral regime (as indicated by a score
-of 0 on executive elections or multi-party_legislative_elections, see above). If another turnover event happens later in the same polity, a new turnover period begins | 1=present, 0=absent
+turnover_period | Indicates whether a particular country-year is part of a period between an initial electoral government alternation (as indicated by a turnover event, see below) in a multi-party electoral regime and an interruption of the same multi-party electoral regime (as indicated by a score of 0 on executive elections or multi-party_legislative_elections, see above). If another turnover event happens later in the same polity, a new turnover period begins | 1=present, 0=absent
 turnover_event | Partisan control over government power alternated from an elected chief executive to another party/coalition/candidate representing the opposition as a consequence of a multi-party election | 1=present, 0=absent
 two_turnover_period | Year is part of a period between a second electoral government alternation. If two turnover events happens later in the same polity under a new multi_party electoral regime, a new two-turnover period begins | 1=present, 0=absent
 sovereign | Country is a separate unit in the international system of states (1) or subjected to foreign colonization or occupation | 1 - 0

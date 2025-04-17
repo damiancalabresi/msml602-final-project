@@ -28,8 +28,8 @@ maternal_mortality_ratio | Number of deaths due to pregnancy-related causes per 
 son_bias | Number of boys born per 100 girls | 100 - 114
 intimate_partner_violence | Percentage of ever-partnered women who experienced physical or sexual violence committed by their intimate partner in the 12 months preceding the survey | 0 - 100
 community_safety | Percentage of women who report feeling safe walking alone at night in their community | 0 - 100
-political_violence_targeting_women | Percentage of women who report being victims of political violence | 0 - 100
-proximity_to_conflict | Number of civilian targeting events in which women and/or girls are the ‘target’ of the violence. It is expressed as the number of events per 100,000 women | 0 - 1.2
+political_violence_targeting_women | Civilian targeting events in which women and/or girls are the ‘target’ of the violence. Expressed as the number of events per 100,000 women. | 0 - 1.2
+proximity_to_conflict | Percentage of women who live within 50 kilometers of at least one armed conflict event during the period 2021-2022 | 0 - 100
 
 ### World Bank Group - Women, Business and the Law Historical Data
 
@@ -52,3 +52,5 @@ pay | Pay | 0 - 100
 marriage | Marriage | 0 - 100
 parenthood | Parenthood | 0 - 100
 entrepreneurship | Entrepreneurship | 0 - 100
+assets | Assets | 0 - 100
+pension | Pension | 0 - 100
