@@ -8,9 +8,9 @@ Deadline | Stage | Status
 03/20 | Data cleanup and EDA | Done
 03/27 | Identify scope. Comprehensive Analysis of Democracy Indexes | Done
 04/03 | Cleanup and Merge Datasets | Done
-04/10 | Linear and Logistic Regression | Pending
+04/10 | Linear and Logistic Regression | Done
 04/17 | SVM and Clustering | Pending
-04/24 | Identify Outliers | Pending
+04/24 | Identify Outliers | In Progress
 05/01 | Analyze impact of global events | Pending
 05/08 | Draft paper | Pending
 05/15 | Redact paper and review | Pending
@@ -46,3 +46,10 @@ For the code, see:
 - [pca-georgetown.ipynb](2-eda-scope-definition/pca-georgetown.ipynb)
 - [pca-world-bank.ipynb](2-eda-scope-definition/pca-world-bank.ipynb)
 
+## 3 - Merge and Compare Linear Regression
+
+See [3-merge-compare-linear-regression/README.md](3-merge-compare-linear-regression/README.md) for details.
+
+For the code, see:
+- [women-rights-and-democracy.ipynb](3-merge-compare-linear-regression/women-rights-and-democracy.ipynb)
+- [compare-democracy-indexes.ipynb](3-merge-compare-linear-regression/compare-democracy-indexes.ipynb)
