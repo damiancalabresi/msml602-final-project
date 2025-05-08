@@ -9,9 +9,9 @@ Deadline | Stage | Status
 03/27 | Identify scope. Comprehensive Analysis of Democracy Indexes | Done
 04/03 | Cleanup and Merge Datasets | Done
 04/10 | Linear and Logistic Regression | Done
-04/17 | SVM and Clustering | Pending
-04/24 | Identify Outliers | In Progress
-05/01 | Analyze impact of global events | Pending
+04/17 | SVM and Clustering | Done
+04/24 | Identify Outliers | Done
+05/01 | Analyze impact of global events | Out of Scope
 05/08 | Draft paper | Pending
 05/15 | Redact paper and review | Pending
 
