@@ -113,25 +113,25 @@ In the case of the Religious Diversity Index, the percentage of population for e
 
 Almost all the datasets contain a composite index with an overall score for democracy or women's rights, which is calculated using the other columns of the dataset. To avoid artificially forcing correlations, these aggregate scores were excluded from initial Principal Component Analysis (PCA). The purpose of the PCA is to identify the most important predictors on each dataset and which ones add more variance to the model, to prioritize them in the next steps. The following figures display the PCA results:
 
-<img src="report-images/1-pca-polity.png" width="800" height="600" alt="1-pca-polity">
+<img src="report-images/1-pca-polity.png" width="400" alt="1-pca-polity">
 
-<img src="report-images/2-pca-freedom-in-the-world.png" width="800" height="600" alt="2-pca-freedom-in-the-world">
+<img src="report-images/2-pca-freedom-in-the-world.png" width="400" alt="2-pca-freedom-in-the-world">
 
-<img src="report-images/3-pca-lied.png" width="800" height="600" alt="3-pca-lied">
+<img src="report-images/3-pca-lied.png" width="400" alt="3-pca-lied">
 
-<img src="report-images/4-pca-georgetown.png" width="800" height="600" alt="4-pca-georgetown">
+<img src="report-images/4-pca-georgetown.png" width="400" alt="4-pca-georgetown">
 
-<img src="report-images/5-pca-world-bank.png" width="800" height="600" alt="5-pca-world-bank">
+<img src="report-images/5-pca-world-bank.png" width="400" alt="5-pca-world-bank">
 
 The coefficients of the first and second principal components of each dataset show that all the predictors are almost equally important and they cannot be discarded.
 
 A correlation matrix was created for each dataset to identify if specific predictors deemed a specific analysis or understand if the overall score could be used when comparing datasets.
 
-<img src="report-images/6-corr-polity.png" width="800" height="600" alt="6-corr-polity">
+<img src="report-images/6-corr-polity.png" width="400" alt="6-corr-polity">
 
-<img src="report-images/7-corr-freedom-in-the-world.png" width="800" height="600" alt="7-corr-freedom-in-the-world">
+<img src="report-images/7-corr-freedom-in-the-world.png" width="400" alt="7-corr-freedom-in-the-world">
 
-<img src="report-images/8-corr-georgetown.png" width="800" height="600" alt="8-corr-georgetown">
+<img src="report-images/8-corr-georgetown.png" width="400" alt="8-corr-georgetown">
 
 The predictors of the Women Peace and Security Index which are not correlated with the rest will require a special consideration during the analysis.
 
@@ -139,13 +139,13 @@ To further validate the datasets, linear regression was run for each dataset to 
 
 We examined the relationship between the Boolean "majority religion" variable (derived from the Religious Diversity Index dataset) and the diversity score itself. The analysis demonstrated that countries with Christian and Muslim majorities tend to exhibit lower religious diversity.
 
-<img src="report-images/table-1-rdi-regression.png" width="800" height="600" alt="table-1-rdi-regression">
+<img src="report-images/table-1-rdi-regression.png" width="400" alt="table-1-rdi-regression">
 
 #### 3. Democracy Index Comparison
 
 The global democracy scores from each dataset were compared to assess alignment and validity. The results are shown in the following figure:
 
-<img src="report-images/9-democracy-index-comparison.png" width="800" height="600" alt="9-democracy-index-comparison">
+<img src="report-images/9-democracy-index-comparison.png" width="400" alt="9-democracy-index-comparison">
 
 The correlation matrix demonstrates that all the datasets are highly correlated, meaning that any of them can be used to find a correlation with the other datasets. The Freedom in the World dataset emergesas the most detailed, containing more categories and a more granular analysis ("total" score in the correlation matrix). Notably, its "total" democracy score exhibited a correlation of 0.77 with the Dichotomous Coding of Democracy variable. Given that the latter is a binary classification, this represents a strong correlation.
 
