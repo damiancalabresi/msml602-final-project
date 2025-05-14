@@ -145,7 +145,7 @@ We examined the relationship between the Boolean "majority religion" variable (d
 
 The global democracy scores from each dataset were compared to assess alignment and validity. The results are shown in the following figure:
 
-![2-democracy-index-comparison.png](report-images/2-democracy-index-comparison.png)
+![9-democracy-index-comparison.png](report-images/9-democracy-index-comparison.png)
 
 The correlation matrix demonstrates that all the datasets are highly correlated, meaning that any of them can be used to find a correlation with the other datasets. The Freedom in the World dataset emergesas the most detailed, containing more categories and a more granular analysis ("total" score in the correlation matrix). Notably, its "total" democracy score exhibited a correlation of 0.77 with the Dichotomous Coding of Democracy variable. Given that the latter is a binary classification, this represents a strong correlation.
 
