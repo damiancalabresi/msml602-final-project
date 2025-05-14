@@ -228,7 +228,7 @@ Including the RDI information generates a cluster in the PCA generated data. Thi
 
 Running the SVM algorithm classifying the countries by relation provided the following results:
 
-![14-wbl-by-religion-svm-conf.png](report-images/14-wbl-by-religion-svm-conf.png)
+![14-wbl-by-religion-svm.png](report-images/14-wbl-by-religion-svm.png)
 
 The democratic and non-democratic countries show a better separation with this segmentation. Still, the confusion matrix shows that there are some countries that are identified as false positives.
 
