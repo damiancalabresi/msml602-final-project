@@ -113,25 +113,25 @@ In the case of the Religious Diversity Index, the percentage of population for e
 
 Almost all the datasets contain a composite index with an overall score for democracy or women's rights, which is calculated using the other columns of the dataset. To avoid artificially forcing correlations, these aggregate scores were excluded from initial Principal Component Analysis (PCA). The purpose of the PCA is to identify the most important predictors on each dataset and which ones add more variance to the model, to prioritize them in the next steps. The following figures display the PCA results:
 
-![1-pca-polity.png](report-images/1-pca-polity.png)
+![1-pca-polity.png](report-images/1-pca-polity.png){width=800 height=600}
 
-![2-pca-freedom-in-the-world.png](report-images/2-pca-freedom-in-the-world.png)
+![2-pca-freedom-in-the-world.png](report-images/2-pca-freedom-in-the-world.png){width=800 height=600}
 
-![3-pca-lied.png](report-images/3-pca-lied.png)
+![3-pca-lied.png](report-images/3-pca-lied.png){width=800 height=600}
 
-![4-pca-georgetown.png](report-images/4-pca-georgetown.png)
+![4-pca-georgetown.png](report-images/4-pca-georgetown.png){width=800 height=600}
 
-![5-pca-world-bank.png](report-images/5-pca-world-bank.png)
+![5-pca-world-bank.png](report-images/5-pca-world-bank.png){width=800 height=600}
 
 The coefficients of the first and second principal components of each dataset show that all the predictors are almost equally important and they cannot be discarded.
 
 A correlation matrix was created for each dataset to identify if specific predictors deemed a specific analysis or understand if the overall score could be used when comparing datasets.
 
-![6-corr-polity.png](report-images/6-corr-polity.png)
+![6-corr-polity.png](report-images/6-corr-polity.png){width=800 height=600}
 
-![7-corr-freedom-in-the-world.png](report-images/7-corr-freedom-in-the-world.png)
+![7-corr-freedom-in-the-world.png](report-images/7-corr-freedom-in-the-world.png){width=800 height=600}
 
-![8-corr-georgetown.png](report-images/8-corr-georgetown.png)
+![8-corr-georgetown.png](report-images/8-corr-georgetown.png){width=800 height=600}
 
 The predictors of the Women Peace and Security Index which are not correlated with the rest will require a special consideration during the analysis.
 
@@ -139,13 +139,13 @@ To further validate the datasets, linear regression was run for each dataset to 
 
 We examined the relationship between the Boolean "majority religion" variable (derived from the Religious Diversity Index dataset) and the diversity score itself. The analysis demonstrated that countries with Christian and Muslim majorities tend to exhibit lower religious diversity.
 
-![table-1-rdi-regression.png](report-images/table-1-rdi-regression.png)
+![table-1-rdi-regression.png](report-images/table-1-rdi-regression.png){width=800 height=600}
 
 #### 3. Democracy Index Comparison
 
 The global democracy scores from each dataset were compared to assess alignment and validity. The results are shown in the following figure:
 
-![9-democracy-index-comparison.png](report-images/9-democracy-index-comparison.png)
+![9-democracy-index-comparison.png](report-images/9-democracy-index-comparison.png){width=800 height=600}
 
 The correlation matrix demonstrates that all the datasets are highly correlated, meaning that any of them can be used to find a correlation with the other datasets. The Freedom in the World dataset emergesas the most detailed, containing more categories and a more granular analysis ("total" score in the correlation matrix). Notably, its "total" democracy score exhibited a correlation of 0.77 with the Dichotomous Coding of Democracy variable. Given that the latter is a binary classification, this represents a strong correlation.
 
@@ -200,7 +200,7 @@ During the analysis, correlation was examined within subgroups of countries that
 
 The correlation between the Women, Peace and Security Index (WPS) and the Freedom in the World democracy index is illustrated below:
 
-![10-wps-correlation.png](report-images/10-wps-correlation.png)
+![10-wps-correlation.png](report-images/10-wps-correlation.png){width=800 height=600}
 
 Strong correlations are observed between specific indicators—such as access_to_justice, the overall WPS index, and financial_inclusion—and the democracy index. However, a deeper examination of the dataset reveals important limitations. The WPS index is survey-based and does not explicitly compare the status of women relative to men within each country. For instance, access_to_justice is measured by the percentage of women who report feeling safe accessing justice, which is more closely tied to the overall strength of the judiciary than to gender-specific legal protections. As a result, this index may reflect general governance quality more than gender-specific disparities.
 
@@ -208,13 +208,13 @@ Strong correlations are observed between specific indicators—such as access_to
 
 Support Vector Machine (SVM) analysis using the Women, Business and the Law (WBL) and Freedom in the World datasets produced the following classification:
 
-![11-wbl-svm.png](report-images/11-wbl-svm.png)
+![11-wbl-svm.png](report-images/11-wbl-svm.png){width=800 height=600}
 
 Three kernel types—Linear, Radial, and Polynomial—were tested. The Radial kernel yielded the best performance. The corresponding confusion matrix is shown below:
 
-![12-wbl-conf.png](report-images/12-wbl-conf.png).
+![12-wbl-conf.png](report-images/12-wbl-conf.png){width=800 height=600}
 
-The following countries were identified as false positives (i.e., countries with high women’s rights scores but classified as non-democracies):
+The following countries were identified as false positives (i.e., countries with high women's rights scores but classified as non-democracies):
 
 Bolivarian Republic of Venezuela, Russian Federation, Republic of Belarus, Republic of Armenia, Republic of Azerbaijan, Republic of Côte d'Ivoire, Burkina Faso, Republic of Liberia, Togolese Republic, Federal Republic of Nigeria, Gabonese Republic, Central African Republic, Republic of Uganda, United Republic of Tanzania, Republic of Rwanda, Federal Democratic Republic of Ethiopia, Republic of Angola, Republic of Mozambique, Republic of Zambia, Republic of Zimbabwe, Republic of Namibia, Republic of Seychelles, United Arab Emirates, Republic of Tajikistan, Kyrgyz Republic, Republic of Uzbekistan, Republic of Kazakhstan, People's Republic of China, Kingdom of Bhutan, Federal Democratic Republic of Nepal, Kingdom of Cambodia, Lao People's Democratic Republic, Socialist Republic of Vietnam, Republic of Singapore, Solomon Islands, Republic of Fiji, Kingdom of Tonga, Independent State of Samoa
 
@@ -222,37 +222,37 @@ Bolivarian Republic of Venezuela, Russian Federation, Republic of Belarus, Repub
 
 The Religious Diversity Index predictor and the features indicating the majority religion of each country were incorporated to the dataset. The following figure shows the correlation between the Women, Business and the Law index and the Democracy index:
 
-![13-wbl-rdi-svm.png](report-images/13-wbl-rdi-svm.png)
+![13-wbl-rdi-svm.png](report-images/13-wbl-rdi-svm.png){width=800 height=600}
 
 Including the RDI information generates a cluster in the PCA generated data. This new cluster is formed by countries with a majority of Christian population.
 
 Running the SVM algorithm classifying the countries by relation provided the following results:
 
-![14-wbl-by-religion-svm.png](report-images/14-wbl-by-religion-svm.png)
+![14-wbl-by-religion-svm.png](report-images/14-wbl-by-religion-svm.png){width=800 height=600}
 
 The democratic and non-democratic countries show a better separation with this segmentation. Still, the confusion matrix shows that there are some countries that are identified as false positives.
 
-![15-wbl-by-religion-conf.png](report-images/15-wbl-by-religion-conf.png)
+![15-wbl-by-religion-conf.png](report-images/15-wbl-by-religion-conf.png){width=800 height=600}
 
 The linear regression results are shown in the following figure:
 
-![table-2-wbl-rdi-regression.png](report-images/table-2-wbl-rdi-regression.png)
+![table-2-wbl-rdi-regression.png](report-images/table-2-wbl-rdi-regression.png){width=800 height=600}
 
 The R-squared is 0.455 and the p-values are below 0.05 for pay, marriage, and pension.
 
 When stratified by majority religion (Christian, Muslim, or Other), model performance improved:
 
-![table-3-wbl-rdi-regression-by-religion.png](report-images/table-3-wbl-rdi-regression-by-religion.png)
+![table-3-wbl-rdi-regression-by-religion.png](report-images/table-3-wbl-rdi-regression-by-religion.png){width=800 height=600}
 
 R-squared is 0.625 and the p-values are below 0.05 for WBL Index, Christian majority, Pay, Marriage, Pension, and Parenthood.
 
 For countries without a Christian or Muslim majority, the model achieved an even higher R-squared of 0.704, with parenthood, assets, and pension as significant predictors:
 
-![table-4-wbl-rdi-regression-by-religion-no-christian-or-muslim.png](report-images/table-4-wbl-rdi-regression-by-religion-no-christian-or-muslim.png)
+![table-4-wbl-rdi-regression-by-religion-no-christian-or-muslim.png](report-images/table-4-wbl-rdi-regression-by-religion-no-christian-or-muslim.png){width=800 height=600}
 
 Outliers identified using Studentized Residuals are shown below:
 
-![table-5-wbl-rdi-outliers.png](report-images/table-5-wbl-rdi-outliers.png)
+![table-5-wbl-rdi-outliers.png](report-images/table-5-wbl-rdi-outliers.png){width=800 height=600}
 
 Restricting the analysis to Christian-majority countries resulted in an R-squared of 0.463, while the Muslim-majority country subset yielded a lower R-squared of 0.388.
 
@@ -260,7 +260,7 @@ Restricting the analysis to Christian-majority countries resulted in an R-square
 
 Continent information was added to the dataset and the SVM algorithm was rerun for different segmentations. The following figure shows the SVM results when the dataset is segmented by: countries of America, Europe, and Asia; countries of Africa and Oceania; and countries with Muslim majority:
 
-![16-wbl-by-continent-svm.png](report-images/16-wbl-by-continent-svm.png)
+![16-wbl-by-continent-svm.png](report-images/16-wbl-by-continent-svm.png){width=800 height=600}
 
 This segmentation confirmed that correlation patterns vary significantly by region and religious composition.
 
@@ -268,29 +268,29 @@ This segmentation confirmed that correlation patterns vary significantly by regi
 
 Hierarchical Clustering was conducted for the Freedom in the World dataset. The following figure shows the dendrogram:
 
-![17-freedom-in-the-world-dendrogram.png](report-images/17-freedom-in-the-world-dendrogram.png)
+![17-freedom-in-the-world-dendrogram.png](report-images/17-freedom-in-the-world-dendrogram.png){width=800 height=600}
 
 The distance threshold was set to 10 to generate 3 clusters.
 
 A Hierarchical Clustering was also created for the Women, Business and the Law dataset. The following figure shows the dendrogram:
 
-![18-wbl-dendrogram.png](report-images/18-wbl-dendrogram.png)
+![18-wbl-dendrogram.png](report-images/18-wbl-dendrogram.png){width=800 height=600}
 
 The distance threshold was set to 5 to generate 5 different clusters.
 
 To facilitate visual interpretation, global maps were generated to illustrate the clusters on each dataset:
 
-![19-fw-map.png](report-images/19-fw-map.png)
+![19-fw-map.png](report-images/19-fw-map.png){width=800 height=600}
 
-![20-wbl-map.png](report-images/20-wbl-map.png)
+![20-wbl-map.png](report-images/20-wbl-map.png){width=800 height=600}
 
 ### B. Discussion
 
 #### 1. Correlation between Women's rights and Democracy
 
-The SVM analysis demonstrated that the Women, Business and the Law dataset serves as a useful indicator of a country’s democratic status. Linear regression further confirmed a positive relationship between women’s legal rights and democracy levels, although the overall R-squared values were moderate. All predictors in the WBL dataset were statistically significant and highly intercorrelated. Among them, marriage, pension, pay, and parenthood emerged as the most predictive indicators of democracy.
+The SVM analysis demonstrated that the Women, Business and the Law dataset serves as a useful indicator of a country's democratic status. Linear regression further confirmed a positive relationship between women's legal rights and democracy levels, although the overall R-squared values were moderate. All predictors in the WBL dataset were statistically significant and highly intercorrelated. Among them, marriage, pension, pay, and parenthood emerged as the most predictive indicators of democracy.
 
-Segmentation of the dataset by continent and majority religion showed that the relationship between women's rights and democracy is strong in countries with higher religious diversity, particularly those without Christian or Muslim majority. Countries with a Christian majority showed a weaker correlation, while Muslim-majority countries demonstrated the weakest relationship between women’s rights and democracy.
+Segmentation of the dataset by continent and majority religion showed that the relationship between women's rights and democracy is strong in countries with higher religious diversity, particularly those without Christian or Muslim majority. Countries with a Christian majority showed a weaker correlation, while Muslim-majority countries demonstrated the weakest relationship between women's rights and democracy.
 
 Countries in Africa and Oceania experiment a much lower correlation. When the analysis is isolated to countries in America, Europe, and Asia, the hypothesis is supported: better conditions for women, as measured by legal frameworks, are strongly associated with higher levels of democracy.
 
