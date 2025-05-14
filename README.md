@@ -12,8 +12,20 @@ Deadline | Stage | Status
 04/17 | SVM and Clustering | Done
 04/24 | Identify Outliers | Done
 05/01 | Analyze impact of global events | Out of Scope
-05/08 | Draft paper | Pending
-05/15 | Redact paper and review | Pending
+05/08 | Draft paper | Done
+05/15 | Redact paper and review | Done
+
+## Initial Proposal
+
+[MSML602 - Principles of Data Science Final Project - Proposal](./MSML602%20-%20Damian%20Calabresi%20-%20Final%20Project%20-%20Proposal.md)
+
+## Final Report
+
+[MSML602 - Principles of Data Science Final Project - Report](./MSML602%20-%20Damian%20Calabresi%20-%20Final%20Project%20-%20Report.md)
+
+To see the report in IEEE Paper format:
+
+[MSML 602 Final Project - Paper - Damian Calabresi.docx](./MSML%20602%20Final%20Project%20-%20Paper%20-%20Damian%20Calabresi.docx)
 
 ## 1 - Dataset Extraction, Cleanup, and Research
 
@@ -53,3 +65,12 @@ See [3-merge-compare-linear-regression/README.md](3-merge-compare-linear-regress
 For the code, see:
 - [women-rights-and-democracy.ipynb](3-merge-compare-linear-regression/women-rights-and-democracy.ipynb)
 - [compare-democracy-indexes.ipynb](3-merge-compare-linear-regression/compare-democracy-indexes.ipynb)
+
+## 4 - SVM and Clustering
+
+For the code, see:
+- [svm.ipynb](4-svm-clustering/svm.ipynb)
+- [linear-regression-with-religion.ipynb](4-svm-clustering/linear-regression-with-religion.ipynb)
+- [continent-enrichment.ipynb](4-svm-clustering/continent-enrichment.ipynb)
+- [clustering.ipynb](4-svm-clustering/clustering.ipynb)
+- [decision-tree.ipynb](4-svm-clustering/decision-tree.ipynb)
