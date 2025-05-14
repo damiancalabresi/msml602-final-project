@@ -139,7 +139,7 @@ To further validate the datasets, linear regression was run for each dataset to 
 
 We examined the relationship between the Boolean "majority religion" variable (derived from the Religious Diversity Index dataset) and the diversity score itself. The analysis demonstrated that countries with Christian and Muslim majorities tend to exhibit lower religious diversity.
 
-<img src="report-images/table-1-rdi-regression.png" width="400" alt="table-1-rdi-regression">
+<img src="report-images/table-1-rdi-regression.png" width="800" alt="table-1-rdi-regression">
 
 #### 3. Democracy Index Comparison
 
@@ -200,7 +200,7 @@ During the analysis, correlation was examined within subgroups of countries that
 
 The correlation between the Women, Peace and Security Index (WPS) and the Freedom in the World democracy index is illustrated below:
 
-![10-wps-correlation.png](report-images/10-wps-correlation.png){width=800 height=600}
+<img src="report-images/10-wps-correlation.png" width="1000" alt="10-wps-correlation">
 
 Strong correlations are observed between specific indicators—such as access_to_justice, the overall WPS index, and financial_inclusion—and the democracy index. However, a deeper examination of the dataset reveals important limitations. The WPS index is survey-based and does not explicitly compare the status of women relative to men within each country. For instance, access_to_justice is measured by the percentage of women who report feeling safe accessing justice, which is more closely tied to the overall strength of the judiciary than to gender-specific legal protections. As a result, this index may reflect general governance quality more than gender-specific disparities.
 
@@ -208,11 +208,11 @@ Strong correlations are observed between specific indicators—such as access_to
 
 Support Vector Machine (SVM) analysis using the Women, Business and the Law (WBL) and Freedom in the World datasets produced the following classification:
 
-![11-wbl-svm.png](report-images/11-wbl-svm.png){width=800 height=600}
+<img src="report-images/11-wbl-svm.png" width="400" alt="11-wbl-svm">
 
 Three kernel types—Linear, Radial, and Polynomial—were tested. The Radial kernel yielded the best performance. The corresponding confusion matrix is shown below:
 
-![12-wbl-conf.png](report-images/12-wbl-conf.png){width=800 height=600}
+<img src="report-images/12-wbl-conf.png" width="400" alt="12-wbl-conf">
 
 The following countries were identified as false positives (i.e., countries with high women's rights scores but classified as non-democracies):
 
@@ -222,37 +222,37 @@ Bolivarian Republic of Venezuela, Russian Federation, Republic of Belarus, Repub
 
 The Religious Diversity Index predictor and the features indicating the majority religion of each country were incorporated to the dataset. The following figure shows the correlation between the Women, Business and the Law index and the Democracy index:
 
-![13-wbl-rdi-svm.png](report-images/13-wbl-rdi-svm.png){width=800 height=600}
+<img src="report-images/13-wbl-rdi-svm.png" width="400" alt="13-wbl-rdi-svm">
 
 Including the RDI information generates a cluster in the PCA generated data. This new cluster is formed by countries with a majority of Christian population.
 
 Running the SVM algorithm classifying the countries by relation provided the following results:
 
-![14-wbl-by-religion-svm.png](report-images/14-wbl-by-religion-svm.png){width=800 height=600}
+<img src="report-images/14-wbl-by-religion-svm.png" width="400" alt="14-wbl-by-religion-svm">
 
 The democratic and non-democratic countries show a better separation with this segmentation. Still, the confusion matrix shows that there are some countries that are identified as false positives.
 
-![15-wbl-by-religion-conf.png](report-images/15-wbl-by-religion-conf.png){width=800 height=600}
+<img src="report-images/15-wbl-by-religion-conf.png" width="400" alt="15-wbl-by-religion-conf">
 
 The linear regression results are shown in the following figure:
 
-![table-2-wbl-rdi-regression.png](report-images/table-2-wbl-rdi-regression.png){width=800 height=600}
+<img src="report-images/table-2-wbl-rdi-regression.png" width="800" alt="table-2-wbl-rdi-regression">
 
 The R-squared is 0.455 and the p-values are below 0.05 for pay, marriage, and pension.
 
 When stratified by majority religion (Christian, Muslim, or Other), model performance improved:
 
-![table-3-wbl-rdi-regression-by-religion.png](report-images/table-3-wbl-rdi-regression-by-religion.png){width=800 height=600}
+<img src="report-images/table-3-wbl-rdi-regression-by-religion.png" width="800" alt="table-3-wbl-rdi-regression-by-religion">
 
 R-squared is 0.625 and the p-values are below 0.05 for WBL Index, Christian majority, Pay, Marriage, Pension, and Parenthood.
 
 For countries without a Christian or Muslim majority, the model achieved an even higher R-squared of 0.704, with parenthood, assets, and pension as significant predictors:
 
-![table-4-wbl-rdi-regression-by-religion-no-christian-or-muslim.png](report-images/table-4-wbl-rdi-regression-by-religion-no-christian-or-muslim.png){width=800 height=600}
+<img src="report-images/table-4-wbl-rdi-regression-by-religion-no-christian-or-muslim.png" width="400" alt="table-4-wbl-rdi-regression-by-religion-no-christian-or-muslim">
 
 Outliers identified using Studentized Residuals are shown below:
 
-![table-5-wbl-rdi-outliers.png](report-images/table-5-wbl-rdi-outliers.png){width=800 height=600}
+<img src="report-images/table-5-wbl-rdi-outliers.png" width="800" alt="table-5-wbl-rdi-outliers">
 
 Restricting the analysis to Christian-majority countries resulted in an R-squared of 0.463, while the Muslim-majority country subset yielded a lower R-squared of 0.388.
 
@@ -260,7 +260,7 @@ Restricting the analysis to Christian-majority countries resulted in an R-square
 
 Continent information was added to the dataset and the SVM algorithm was rerun for different segmentations. The following figure shows the SVM results when the dataset is segmented by: countries of America, Europe, and Asia; countries of Africa and Oceania; and countries with Muslim majority:
 
-![16-wbl-by-continent-svm.png](report-images/16-wbl-by-continent-svm.png){width=800 height=600}
+<img src="report-images/16-wbl-by-continent-svm.png" width="400" alt="16-wbl-by-continent-svm">
 
 This segmentation confirmed that correlation patterns vary significantly by region and religious composition.
 
@@ -268,21 +268,21 @@ This segmentation confirmed that correlation patterns vary significantly by regi
 
 Hierarchical Clustering was conducted for the Freedom in the World dataset. The following figure shows the dendrogram:
 
-![17-freedom-in-the-world-dendrogram.png](report-images/17-freedom-in-the-world-dendrogram.png){width=800 height=600}
+<img src="report-images/17-freedom-in-the-world-dendrogram.png" width="600" alt="17-freedom-in-the-world-dendrogram">
 
 The distance threshold was set to 10 to generate 3 clusters.
 
 A Hierarchical Clustering was also created for the Women, Business and the Law dataset. The following figure shows the dendrogram:
 
-![18-wbl-dendrogram.png](report-images/18-wbl-dendrogram.png){width=800 height=600}
+<img src="report-images/18-wbl-dendrogram.png" width="600" alt="18-wbl-dendrogram">
 
 The distance threshold was set to 5 to generate 5 different clusters.
 
 To facilitate visual interpretation, global maps were generated to illustrate the clusters on each dataset:
 
-![19-fw-map.png](report-images/19-fw-map.png){width=800 height=600}
+<img src="report-images/19-fw-map.png" width="800" alt="19-fw-map">
 
-![20-wbl-map.png](report-images/20-wbl-map.png){width=800 height=600}
+<img src="report-images/20-wbl-map.png" width="800" alt="20-wbl-map">
 
 ### B. Discussion
 
