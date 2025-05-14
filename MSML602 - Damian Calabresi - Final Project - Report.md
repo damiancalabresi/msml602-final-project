@@ -212,7 +212,7 @@ Support Vector Machine (SVM) analysis using the Women, Business and the Law (WBL
 
 Three kernel types—Linear, Radial, and Polynomial—were tested. The Radial kernel yielded the best performance. The corresponding confusion matrix is shown below:
 
-![12-wbl-svm-conf.png](report-images/12-wbl-svm-conf.png).
+![12-wbl-conf.png](report-images/12-wbl-conf.png).
 
 The following countries were identified as false positives (i.e., countries with high women’s rights scores but classified as non-democracies):
 
